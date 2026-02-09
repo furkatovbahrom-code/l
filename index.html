@@ -5,70 +5,48 @@
   <title>B-ECO Fuel Tabs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="B-ECO Fuel Tabs – yoqilg‘ini tejash, dvigatelni himoyalash va ekologiya uchun innovatsion yechim">
-  <meta name="keywords" content="B-ECO, Fuel Tabs, yoqilg'i tejash, eco fuel">
+  <meta name="description" content="B-ECO Fuel Tabs – yoqilg‘ini tejash va dvigatelni himoyalash">
+  <meta name="keywords" content="B-ECO, Fuel Tabs, eco fuel">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
 
-  <nav class="nav">
-    <a href="#home" id="navHome">Home</a>
-    <a href="#product" id="navProduct">Mahsulot</a>
-    <a href="#faq" id="navFaq">Savollar</a>
-  </nav>
-
-  <!-- INTRO ANIMATION -->
+<!-- INTRO -->
 <div id="intro">
   <div class="intro-content">
-    <img src="photo_2026-02-06_01-49-26.jpg" alt="B-ECO Logo">
+    <img src="photo_2026-02-06_01-49-26.jpg" alt="B-ECO">
     <h1>B-ECO</h1>
   </div>
 </div>
-  
-  <div class="lang">
-    <button onclick="setLang('uz')">UZ</button>
-    <button onclick="setLang('kz')">KZ</button>
-    <button onclick="setLang('ru')">RU</button>
-  </div>
-</header>
+
+<nav class="nav">
+  <a href="#home" id="navHome">Home</a>
+  <a href="#about" id="navAbout">Mahsulot</a>
+  <a href="#faq" id="navFaq">Savollar</a>
+</nav>
+
+<div class="lang">
+  <button onclick="setLang('uz')">UZ</button>
+  <button onclick="setLang('kz')">KZ</button>
+  <button onclick="setLang('ru')">RU</button>
+</div>
+
 <section class="hero" id="home">
   <div class="overlay"></div>
   <div class="hero-content">
     <h1 id="title"></h1>
     <p id="subtitle"></p>
 
- <div class="actions">
-  <a href="tel:+77752709238" target="_blank" class="btn call">
-    📞 Call
-  </a>
-
-  <a href="https://wa.me/77752709238" target="_blank" class="btn wa">
-    💬 WhatsApp
-  </a>
-
-  <a href="https://www.instagram.com/beco_team?igsh=NjVxZzNqbmNjazll"
-     target="_blank" class="btn ig">
-    📸 Instagram
-  </a>
-
-  <!-- 🆕 TikTok tugma -->
-  <a href="https://www.tiktok.com/@bepic_team_?_r=1&_t=ZS-93mafVgPNlU"
-     target="_blank" class="btn tiktok">
-    🎵 TikTok
-  </a>
-</div>
-
- <button class="btn fuel-btn" onclick="openFuel()">🔥 Fuel Tabs</button>
-
-  <!-- 🔥 YANGI KNOPKA -->
-  <button class="btn video-btn" onclick="openVideo()">
-    🎬 Fuel Tabs Video
-  </button>
-</div>
+    <div class="actions">
+      <a href="tel:+77752709238" class="btn">📞 Call</a>
+      <a href="https://wa.me/77752709238" class="btn">💬 WhatsApp</a>
+      <a href="https://www.instagram.com/beco_team" class="btn">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@bepic_team_" class="btn tiktok">🎵 TikTok</a>
     </div>
+
+    <button class="btn" onclick="openFuel()">🔥 Fuel Tabs</button>
+    <button class="btn" onclick="openVideo()">🎬 Video</button>
   </div>
 </section>
 
@@ -90,44 +68,31 @@
     <button onclick="toggleFaq(1)" id="q1"></button>
     <div class="faq-body" id="a1"></div>
   </div>
-
   <div class="faq-item">
     <button onclick="toggleFaq(2)" id="q2"></button>
     <div class="faq-body" id="a2"></div>
   </div>
-
-  <div class="faq-item">
-    <button onclick="toggleFaq(3)" id="q3"></button>
-    <div class="faq-body" id="a3"></div>
-  </div>
-
-  <div class="faq-item">
-    <button onclick="toggleFaq(4)" id="q4"></button>
-    <div class="faq-body" id="a4"></div>
-  </div>
 </section>
-<footer>
-  © 2026 — <b>Bahrom Furkatov</b>, Основатель
-</footer>
 
+<footer>© 2026 — <b>Bahrom Furkatov</b></footer>
+
+<!-- MODALS -->
 <div id="fuelModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeFuel()">&times;</span>
-    <img src="photo_2026-02-06_19-38-53.jpg" alt="Fuel Tabs" class="fuel-img">
+    <span class="close" onclick="closeFuel()">×</span>
+    <img src="photo_2026-02-06_19-38-53.jpg" class="fuel-img">
   </div>
 </div>
-<!-- 🎬 Fuel Tabs Video -->
+
 <div id="videoModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeVideo()">&times;</span>
-
-    <video controls autoplay playsinline width="100%">
+    <span class="close" onclick="closeVideo()">×</span>
+    <video controls width="100%">
       <source src="video_2026-02-06_19-17-56.mp4" type="video/mp4">
-      Brauzeringiz video ocholmaydi
     </video>
-
   </div>
 </div>
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>

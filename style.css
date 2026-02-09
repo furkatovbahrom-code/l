@@ -256,14 +256,18 @@ a.btn {
   transition: all 0.3s ease;
 }
 
-/* TIKTOK MAXSUS */
-a.btn.tiktok {
-  background: #000 !important;
-  color: #fff !important;
-  border: 1px solid #000;
+/* TikTok tugma */
+.btn.tiktok {
+  background: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-a.btn.tiktok:hover {
-  background: #111 !important;
-  transform: scale(1.04);
+/* Hover animatsiya */
+.btn.tiktok:hover {
+  background: #111;
+  transform: scale(1.03);
 }
